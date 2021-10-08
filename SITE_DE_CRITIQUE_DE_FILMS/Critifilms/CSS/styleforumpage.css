@@ -1,0 +1,693 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+body{
+	background-color: black;
+	
+}
+
+
+
+
+/*---------------Nav--------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffca08;
+    color: white;
+	border-radius: 0 0 15px 15px;
+}
+
+.brand-title img {
+width: 57px;
+    margin-left: 20px;
+    margin-right: -20px;
+}
+
+
+.brand-title  {
+	margin: 10px;
+    margin-left: 2em;
+   
+	
+}
+
+
+.navbar-links {
+       height: 100%;
+    margin-right: 50px;
+    margin-left: -40px;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links ul li a:hover {
+   	color: #fff;
+	text-shadow: 0 0 20px rgb(255,224,27),
+				 0 0 20px rgb(255,224,27),
+				 0 0 20px rgb(255,224,27),
+				 0 0 20px rgb(255,224,27),
+				 0 0 20px rgb(255,224,27),
+				 0 0 20px rgb(255,224,27),
+				 0 0 20px rgb(255,224,27),
+				 0 0 20px rgb(255,224,27);
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+	font-size: 17px;
+}
+
+
+
+.toggle-button {
+    position: absolute;
+    top: 2.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 34px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+/*------------search----------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+
+
+.search{
+	width: 59%;
+    margin-left: 5%;
+    margin-bottom: 5px;
+	margin-top: 5px;	
+}
+
+form.search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid white;
+  float: left;
+  width: 80%;
+  background: white;
+  border-radius: 30px;
+}
+
+form.search button {
+    float: left;
+    width: 7%;
+    padding: 10px;
+    background: #ffca08;
+    color: white;
+    font-size: 17px;
+    border: 1px solid transparent;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+
+
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------end ---search-----------------*/
+
+
+@media (min-width:320px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+		
+    }
+
+ .toggle-button {
+    display: flex;
+    margin-right: 4%;
+       margin-top: -2%;
+}
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a  {
+	margin-left: 2em;
+    border-radius: 15px;
+    font-size: 20px;
+    border: 1px solid white;
+    width: 100%;   
+	}
+
+    .navbar-links.active {
+        display: flex;
+    }
+.search{
+	width:27em;
+	margin-bottom:3%;
+}
+.brand-title img {
+  width: 57px;
+}
+
+form.search button {
+    float: left;
+    width: 7%;
+    margin-left: 44em;
+    margin-top: -43px;
+    padding: 10px;
+    background: #ffca08;
+    color: white;
+    font-size: 17px;
+    border: 1px solid transparent;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+form.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid white;
+    float: left;
+    margin-left: 21%;
+    width: 152%;
+	margin-top: 1px;
+    background: white;
+    border-radius: 30px;
+}
+.search {
+    width: 27em;
+    margin-bottom: 2%;
+    margin-top: -55px;
+}
+
+
+.brand-title img {
+    width: 57px;
+    margin-bottom: -10px;
+}
+}
+
+
+
+
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+		
+    }
+
+    .toggle-button {
+        display: flex;
+        margin-right:1%;
+        margin-top:1%;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a  {
+	margin-left: 2em;
+    border-radius: 15px;
+    font-size: 20px;
+    border: 1px solid white;
+    width: 100%;   
+	}
+
+    .navbar-links.active {
+        display: flex;
+    }
+.search{
+	width:27em;
+	margin-bottom:3%;
+}
+.brand-title img {
+  width: 57px;
+}
+form.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid white;
+    float: left;
+    margin-left: 21%;
+    width: 93%;
+    background: white;
+    border-radius: 30px;
+}
+form.search button {
+    float: left;
+    width: 7%;
+    margin-top: -43px;
+    margin-left: 29em;
+    padding: 10px;
+    background: #ffca08;
+    color: white;
+    font-size: 17px;
+    border: 1px solid transparent;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 30px;
+
+}
+
+.toggle-button {
+    display: flex;
+    margin-right: 2%;
+    margin-top: -22px;
+}
+}
+
+@media (min-width:1281px) {
+
+	form.search input[type=text] {
+		padding: 10px;
+		font-size: 17px;
+		border: 1px solid white;
+		float: left;
+		margin-bottom: -5px;
+		margin-left: 21%;
+		width: 233%;
+		background: white;
+		border-radius: 30px;
+}
+
+	form.search button {
+		float: left;
+		width: 7%;
+		margin-left: 65em;
+		margin-top: -39px;
+		padding: 10px;
+		background: #ffca08;
+		color: white;
+		font-size: 17px;
+		margin-bottom: -5px;
+		border: 1px solid transparent;
+		border-left: none;
+		cursor: pointer;
+		border-radius: 30px;
+}
+	.toggle-button {
+		display: flex;
+		margin-right: 4%;
+		margin-top: -22px;
+}
+	}
+
+
+
+/*-------------END---NAV-------------------*/
+main {
+  width:100%;
+  margin: 0 auto;
+  padding: 30px 20px;
+ min-height: calc(99vh - 143px - 58px);
+}
+
+
+/*-------------------------------------*/
+
+
+.section{
+	width: 90%;
+    margin-left: 5%;
+    margin-top: 4%;	
+}
+
+.section h2{
+	
+	margin-top: -15px;
+    color: white;
+    margin-bottom: 0px;
+    font-size: 23pt;
+    font-family: 'Josefin Sans', sans-serif;
+	
+}
+
+
+.section p{
+	color:white;
+    font-size: 17pt;
+}
+
+.section hr.line {
+border: 5px solid rgb(18,18,18);  
+}
+
+
+
+.reponsearea{
+background-color: rgb(18,18,18);
+    border-radius: 15px;
+    width: 70%;
+    padding: 10px;
+    margin-top: 3%;
+    height: auto;
+    margin-left: 15%;
+}
+
+
+.imageprofile{
+    border-radius: 15px;
+    width: 95%;
+    height: 128px;
+	margin-left:5%;
+	
+}
+
+
+ .imageprofile img{
+    width: 128px;
+    height: 128px;
+}
+
+.insideinfo{
+	width: 8em;
+    margin-left: 128px;
+    margin-top: -150px;
+    height: 128px;
+
+}
+
+
+.insideinfo h2 {
+	font-size: 23px;
+    color: silver;
+    margin-top: 50px;
+    margin-bottom: -15px;
+    margin-left: 10px;
+}
+
+.insideinfo h3{
+	font-size: 17px;
+    color: silver;
+    margin-top: 20px;
+    margin-left: 10px;
+	
+}
+
+
+.insidemessage{
+    width: 94%;
+    height: auto;
+    margin-left: 3%;
+}
+
+
+.insidemessage p{
+    color: white;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+
+
+
+.section2{
+		width: 95%;
+    margin-left: 3%;
+    margin-bottom: -3%;
+    margin-top: 3%;	
+}
+
+.section2 hr.line {
+border: 1px solid white;  
+}
+
+
+
+
+.btndelete{
+	float: right;
+    margin-right: 3%;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+	
+}
+
+
+
+
+
+
+
+
+#messagearea{
+	
+padding: 17px 0 0 27px;
+    font-size: 17px;
+    font-weight: bold;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    background-color: #101010;
+    border: black;
+    border-radius: 15px;
+    color: white;
+	
+}
+
+
+
+
+.btn {
+	color: #000000;
+    font-weight: bold;
+    width: 13%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #ffca08;
+    margin-left: 77%;
+    margin-top: 2%;
+}
+
+
+
+
+
+
+.section2 h2{
+	margin-top: 0;
+    color: white;
+    margin-bottom: 0px;
+    font-size: 20pt;
+    font-family: 'Josefin Sans', sans-serif;
+	
+}
+#h2_2{
+	margin-top: 0;
+    color: white;
+	text-align:center;
+    margin-bottom: 0px;
+    font-size: 20pt;
+    font-family: 'Josefin Sans', sans-serif;
+	
+}
+
+.section2 hr.line {
+border: 5px solid rgb(18,18,18);  
+}
+
+
+
+
+
+
+/*------------pagination----------*/
+
+.pagination{
+	
+	text-align: center;
+	
+}
+
+
+
+
+.pagination ul
+{
+display: inline-flex;
+    margin-top: 5%;
+    padding: 0;
+    margin-bottom: 0;
+}
+.pagination ul li
+{
+	list-style: none;
+}
+.pagination ul li a
+{
+	position: relative;
+	display: block;
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+	background: #353535;
+	color: #565656;
+	text-decoration: none;
+	margin: 5px;
+	border-radius: 4px;
+	box-shadow: inset 0 5px 10px rgba(0,0,0,.1), 0 2px 5px rgba(0,0,0,.5);
+}
+.pagination ul li a.active,ul li a:hover
+{
+	color: #fff;
+	text-shadow: 0 0 20px rgb(255,224,27),
+				 0 0 20px rgb(255,224,27),
+				 0 0 20px rgb(255,224,27),
+				 0 0 20px rgb(255,224,27),
+				 0 0 20px rgb(255,224,27),
+				 0 0 20px rgb(255,224,27),
+				 0 0 20px rgb(255,224,27),
+				 0 0 20px rgb(255,224,27);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------End--pagination----------*/
+
+
+
+
+
+
+
+/*-----------------Footer--------------------*/
+.footer {
+ width: 100%;
+    background-color: #ffca08;
+    color: white;
+    text-align: center;
+    height: auto;
+    margin: 0;
+    left: 0;
+    position: absolute;
+	border-radius: 100% 100% 0 0;
+}
+
+.footer img{
+    text-align: center;
+    margin-top: auto;
+    width: 57px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+	
+}
+.footer p{
+	
+	margin-top: auto;
+    text-align: center;
+	
+}
+
+
+
+/*----------------End-Footer--------------------*/
